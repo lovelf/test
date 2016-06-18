@@ -406,3 +406,6 @@
 - Mage_Core_Model_Config 实际是管理Config Mage_Core_Model_Config_Element储存数据
 
 **Mage_Core_Model_Cache
+- `protected $_idPrefix = '';` Id prefix @var string
+- `protected $_frontend;` Cache frontend API @var Varien_Cache_Core
+- `
