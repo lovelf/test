@@ -27,7 +27,9 @@
   -    `public static function getRoot()`
   -    `public static function getEvents()`
   -    `public static function objects($key = null)` 
-  -    `public static function getBaseDir($type = 'base')`
+  -    `public static function getBaseDir($type = 'base'){
+            return $this->config->getOptions->getDir($type);  
+       }`
   -    `public static throwException($message, $messageStorage)`
   -    `protected static function _setIsInstalled($options = array())` Set application isInstalled flag based on given options
   -    `protected static function _setConfigModel($options)` Set application Config model self::$_config = new Mage_Core_Model_Config($options);
@@ -37,7 +39,12 @@
   -  `public static function getModel(){
           return self::getConfig()->getModelInstance($modelClass, $arguments);
        }` Retrieve model object
-  
+  - `public static function isInstalled($option){
+        @return bool
+     }`
+- `function getResourceModel($string){
+     return self::getConfig()->getResourceModelInstance($modelClass, $argument);
+   }`
  
 
 ###Varien_Autoload
@@ -109,6 +116,12 @@
 - `public function run($params){
       $options = isset($params['options']) ? $params['options'] : array();
       $this->baseInit($options);
+      
+      if ($this->_cache->processRequest()) {
+          $this->getResponse()->sendResponse();
+      } else {
+          $this->_initModules();
+      }
    }`
 - `public function baseInit($options){
       $this->_initEnvironment();
@@ -139,9 +152,18 @@
          $options = array();
       }
       $options = array_merge($options,$cacheInitOptions);
-      $this_cache = Mage::getModel('core/cache', $options);
+      $this_cache = Mage::getModel('core/cache', $options); // Frontend API
       $this->_isCacheLocked = false;
       return $this;
+  }`
+
+- `private function _initModules(){
+     $this->_config->loadModules();
+     $this->_config->loadDb();
+     
+  }`
+- `function useCache($string) {
+     return $this->_cache->canUse($type); // Varien_Core_Cache
   }`
 
 ###Varien_Event_Collection
@@ -308,6 +330,60 @@
       }
   }`
 
+- `public function loadModulesCache(){
+      if (Mage::isInstalled(array('etc_dir' => $this->getOptions->getEtcDir())) {
+          $loaded = $this->loadCache();
+      }
+  }`
+- `private function _canUseCacheForInit() {
+     return Mage::app()->useCache('config')&& $this->_allowCacheForInit && !this->_loadCache($this->_getCacheLockId()); 
+   }`
+- `public function loadCache(){}`
+
+- `public function loadModules(){
+       $this->_loadDeclaredModules();
+       
+       $resourceConfig = 'config.mysql4.xml';
+       $this->loadModulesConfiguration(array('config.xml','config.mysql4.xml')), $this); 
+   }` // Load modules configuration
+- `protected function _loadDecaredModules(){
+      $moduleFiles = $this->_getDeclaredModuleFiles();
+      
+  }` // Load declared modules configuration
+
+- `protected function _getDeclaredModuleFiles(){
+       // 获取etc/modules/*.xml文件 分成base,mage,custom
+  }`
+
+- `protected _isAllowedModule($string){
+
+   }`
+- `protected function _getResourceConnectionModel($string)`
+- `public function getResourceConnectionConfig('Core_setup')`
+- `pulbic function getResourceConfig($name)` 
+- `public function loadModulesConfiguration()`
+- `function _canUseLocalModules()' //是否允许加载local模块
+- `function getModuleDir()` 模块目录
+- `function getModuleConfig()` //模块配置xml对象
+- `function get`
+- `public function applyExtends()`
+- `public function loadDb(){
+      $dbConf = $this->getResourceModel();
+      $dbConf->loadToXml($this);
+   }`
+- `public function getResourceModel(){
+     $this->_resourceModel = Mage::getResourceModel('core/config');
+   }`
+- `public function getResourceModelInstance($modelClass,$arugment){
+    $factoryName = $this->_getResourceModelFactoryClassName($modelClass);
+    return $this->getModelInstance($factoryName, $argument);
+  }`
+- `protected function _getResourceModelFactoryClassName(){
+       $classArray = explode('/', $modelClass);
+   }` // Get factory class name for a resource
+- `public function getModelInstance($factoryName, $construargument){
+    $obj = new Mage_Core_Resource_Model_Config();
+  }`
 
 ###<span>Mage_Core_Model_Config_Base</span>
 - extend Varien_Simplexml_Config
@@ -372,6 +448,8 @@
 - `const VAR_DIRECTORY ='var';` Var directory @var string
 - `protected $_dirExists = array();` Flag cache for existing or already created directories @var array
 - `protected function _construct(){}`
+- `public function getDir($type)`
+- `public function 
 
 ###Mage_Core_Model_Config_Element
 - extends Varien_Simplexml_Element
@@ -407,5 +485,84 @@
 
 **Mage_Core_Model_Cache
 - `protected $_idPrefix = '';` Id prefix @var string
+
 - `protected $_frontend;` Cache frontend API @var Varien_Cache_Core
-- `
+
+- `public function __construct(array $options = array()){
+      $this_defaultBackendOptions['cache_dir'] = isset($options['cache_dir']) $options['cache_dir'] : Mage::getBaseDir('cache');
+      // Initialize id prefix
+      
+      $this->_idPrefix = substr(md5(Mage::getConfig()->getOptions()->getEtcDir()), 0, 3).'_';
+      
+      $backend = $this->_getBackendOptions($options);
+      $frontend = $this->_getFrontendOptions($options);
+      $this->_frontend = Zend_Cache::factory('Varien_Core_Cache', $backend['type'], $frontend, $backend['options'], true, true, true);
+   }`
+- `protected function _getBackendOptions(array $cacheOptions) {
+    $enable2levels = false;
+    $type = 'file';
+    $options = array();
+    
+    $backendType = false;
+    
+    return array('type'=> $type, 'options' => $options);
+  }`
+
+- `protected function _getFrontendOptions(array) {
+       return $options;
+   }`
+
+###Zend_Cache
+- abstract class Zend_Cache
+- `public static factory()`; 全部为factory服务
+- `public function _makeBackend($backend, $backOptions, true, ture, true){
+     $backendClass = 'Zend_Cache_Backend_file';
+     
+     return new $backendClass($backendOptions);
+  }` Backend Constructor
+
+- `public function _makeFrontend(){
+      return new Varien_Cache_Core($options);
+   }`  // Frontend Constructor
+
+###Zend_Cache_Backend_file
+- extends Zend_Cache_Backend
+- implement Zend_Cache_Backend_ExtendInterface
+- __construct options参数来自Mage_Cache_Model_Core
+
+###Zend_Cache_Backend
+- `public function __construct(array $options = array()){
+       while(list($name, $value) = each($options)) {
+          $this->setOption($name, $value);
+       }
+   }`
+
+###Varien_Cache_Core
+- extends Zend_Cache_Core
+- 
+
+###Zend_Cache_Core
+
+
+
+
+
+
+###问题
+- 出现在app->_initModules();
+
+### Mage_Core_Model_Resource_Config
+
+    extends Mage_Core_Model_Resource_Db_Abstract
+    // 初始函数
+    protected function _construct() {
+        $this->_init('core/config_data', 'config_id');
+    }
+
+
+### Mage_Core_Model_Resource_Db_Abstract
+    extends Mage_Core_Model_Resource_Abstract
+    
+    public function _init() {
+    
+    }
