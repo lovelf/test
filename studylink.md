@@ -10,3 +10,4 @@
 -  [larvel 教程学习](https://segmentfault.com/bookmark/1230000003955248)
 -  [一个简单的Magento1.9模块示例](https://segmentfault.com/a/1190000004366062)
 -  [亚马逊导航菜单的秘密](http://jayuh.com/amazon-site-navigation/)
+-  [javascript最佳实践](http://www.cnblogs.com/xianyulaodi/p/5638139.html)
