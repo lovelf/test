@@ -548,7 +548,7 @@
 
 
 
-###问题
+### 问题
 - 出现在app->_initModules();
 
 ### Mage_Core_Model_Resource_Config
@@ -566,3 +566,40 @@
     public function _init() {
     
     }
+
+### Mage_Core_Model_Resource_Abstract
+
+属性 | 名称 | 参数 | 内容 | 描述
+---| --- | ---| --- | ---
+public protected  | __construct |null  | $this->_construct();| Main contructor
+static protected | $_commitCallBack | null  array() | 提交事务回调函数
+abstract protected function | _construct | null |null  | Resource initalisation
+abstract protected function | _getReadAdapter |null | null | Retrieve connection for read data
+abstract protected function | _getWriteAdapter | null |null  | Retrieve connection for write data
+public function | beginTransaction |null  | null | Start resource transaction
+public function | addCommitCallBack | $callback |null | Subscribe some callback to transaction commit
+public function | commit | null | null | commit resource transaction
+public function | rollBack | null | null | rollback resource transaction
+public function | formatDate | $date, $includeTime| null | format date to internal format
+public function | mktime |$date | null | Convert internal date to UNIX timestamp
+protected function | _serializeField | null | null | null
+protected function | _unserializeField | null | null | null
+protected function | _prepareDataForTable | $object , $table | null |  Prepare data for passed table
+protected function | _prepareTableValueForSave | $value, $type | null | Prepare value for save
+
+### Mage_Core_Model_Resource_Db_Abstract
+属性 | 名称 | 参数 | 内容 | 描述
+---| --- | ---| --- | ---
+protected | $_resources | null | @var Mage_Core_Model_Resource | Cached resources singleton
+protected | $_resourcePrefix | null | @var string | Prefix for resources that will be used in this resource  Model
+protected | $_connections | array(); | @var array | Connections cache for this resource model
+protected | $_resourceModel | null | @var string | Resource model name that contains entities (names of tables)
+protected | $_tables | array() | @var array() | Tables in the resource model
+protected | $_mainTable | null | @var string  | Main Table name
+protected | $_idFieldName | null |@var string | Main table primary key field name
+protected | $_isPkAutoIncrement | true | @var bool | primary key auto increment flag
+protected | $_useIsObjectNew | false | @var bool | Use is object new method for save of object
+protected | $_fieldsForUpdate | null | @var array | Fields List for update in forsedSave
+protected | $_mainTableFields | null | @var array | Fields of main table
+protected | $_uniqueField | null | @var array | null
+protected | $_serializableFields | null | @var array | null
