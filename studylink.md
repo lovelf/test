@@ -12,3 +12,6 @@
 -  [亚马逊导航菜单的秘密](http://jayuh.com/amazon-site-navigation/)
 -  [javascript最佳实践](http://www.cnblogs.com/xianyulaodi/p/5638139.html)
 -  [php性能优化](https://segmentfault.com/a/1190000002503577)
+-  [Web开发之路](http://www.cnblogs.com/polk6/archive/2013/05/10/3071327.html#3433041)
+-  [CSS float 浮动属性](http://www.cnblogs.com/polk6/archive/2013/07/25/3142187.html)
+-  [硬盘的存储原理和内部架构 ](http://blog.chinaunix.net/uid-23069658-id-3413957.html)
