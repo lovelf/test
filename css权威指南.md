@@ -35,3 +35,67 @@
      - 链接伪类 :link有href属性, :visited
      - 动态伪类 :focus, :hover, :active;
      - 第一个子元素
+     
+
+### 第四章长度和单位
+- inherit
+
+```html
+<style type="text/css">
+#toolbar {
+	background: blue;
+	color: white;
+}
+
+#toolbar a {
+	color: inherit;
+	text-decoration: none;
+}
+</style>
+<div id="toolbar">
+<a href="one.html">one</a> | <a href="two.html">two</a> | <a href="three.html">three</a>
+</div>
+
+```
+
+- font-family 通用字体 字体系列 字体，后退机制，单引号使用
+- font-weight 
+- font-size
+
+参数 | 值
+----| ----
+值 | xx-small <length> <percentage> inherit
+初始值 | medium
+应用于 | 所有元素
+继承性 | 有
+百分数 | 根据父元素的字体大小来计算
+计算值 | 绝对长度
+
+**字体大小继承是计算值，而不是百分比**
+**百分比 浏览器取整**
+
+
+### 第六章文本属性
+- text-indent
+
+参数 | 值
+---- | ----
+值 | <length> <percentage> inherit
+初始值 | 0
+应用于 | 块级元素
+继承性 | 有
+百分数 | 相对于包含块的宽度
+计算值 | 对于百分数值，要根据指定确定；对于长度值，则为绝对长度值
+
+**text-indent 总是继承计算值，而不是声明值。**
+
+- text-align
+
+参数 | 值
+---- |----
+值 | left center right justify inherit
+初始值 | 用户代理特定的值，还可能取决于书写方向
+应用于 | 块级元素
+继承性 | 有
+计算值 | 根据指定确定
+说明 | null

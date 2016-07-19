@@ -603,3 +603,220 @@ protected | $_fieldsForUpdate | null | @var array | Fields List for update in fo
 protected | $_mainTableFields | null | @var array | Fields of main table
 protected | $_uniqueField | null | @var array | null
 protected | $_serializableFields | null | @var array | null
+protected function | _init | $mainTable, $idFieldName | @var string | Standard resource model initialization
+protected function | _setResource | $connections, $tables=null | null | Initialize connections and tables
+protected function | _setMainTable | $mainTable, $idFieldName = null | @var string | set main entity table name and primary key field name If field name is ommited {table_name}_id will be used
+public function | getIdFieldName | null | @return string | get primary key field name
+public function | getMainTable | null | @return string | Returns main table name - extracted from "module/table" style and validate by db adapter
+public function | getTable | $entityName | @param string | get table name for the entity,validated by db adapter
+public function | getValueTable | $entityName, $valueType | @param string , @param string | Retrieve table name for the entity separated value
+protected function | _getConnection | @param string $connection | Get connection by name or type
+protected function | _getReadAdapter | null | @varien_Db_Apdater_Interface | Retrieve connection for read data 
+protected function | _getWriteAdpater | null | @return Varien_Db_Adapter_Interface | Retrieve connection for write data
+public function | getReadConnection | null | @return Varien_Db_Adapter_Interface | Temporary resolving collection compatibility
+public function | load| Mage_Core_Model_Abstract $object , $value, $field | null | load an object
+public function | _getLoadSelect | $field, $value $object |Retrieve select object for load object data
+public function | save | Mage_Core_Model_Abstract $object | null | save object object data
+public function | forsedSave | Mage_Core_Model_Abstract $object | Forsed save object data 
+public function | delete | Mage_Core_Model_Abstract $object | delete the object
+public function | addUniqueField | $field | @return Mage_Core_Model_Resource_Db_Abstract | Add unique field restriction
+public function | resetUniqueField | null | @return Mage_Core_Model_Resource_Db_Abstract | Reset unique fields restrictions
+pubic function | unserializeFields | Mage_Core_Model_Abstract $object | Unserialize serializeable object fields 
+public function | _initUniqueFields | null | @return Mage_Core_Model_Resource_Db_Abstract | Initialize unique fields
+public function | getUniqueFields | null | @return array | Get configuration of all unique fields
+protected function | _prepareDataForSave | Mage_Core_Model_Abstract $object | prepare data for save
+public function | hasDataChanged | $object | check that model data fields that can be saved has changed comparing with origData
+protected function | _prepareValueForSave | $value, $type | prepare value for save 
+protected function | _checkUnique | Mage_Core_Model_Abstract $object | check for unique values existence
+public function | afterLoad | Mage_Core_Model_Abstract $object | After load
+protected function | _afterload | Mage_Core_Model_Abstract | perform actions after object load
+protected function | _beforeSave | Mage_Core_Model_Abstract $object | perform action before object save
+protected function | _afterSave | Mage_Core_Model_Abstract $object | @param Varien_Object $object | Perform actions after object save
+protected function | _beforeDelete | Mage_Core_Model_Abstract $object | Perform actions before object delete
+protected function|  _afterDelete | Mage_Core_Model_Abstract | Perform actions after object delete
+protected function | _serializeFields | Mage_Core_Model_Abstract $object | Serialize serializeable fields of the object
+public function | getChecksum | $table | null | Retrieve table name
+
+### Mage_Core_Model_Resource_Config
+属性 | 名称 | 参数 | 内容 | 描述
+---| --- | ---| --- | ---
+extends | Mage_Core_Model_Resource_Db_Abstract | null | null | null
+protected function | _construct | null | null | Define main table
+public function | loadToXml | Mage_Core_Model_Config $xmlConfig, condition=null | Load configuration values into xml config object 
+public function | saveConfig | $path,$value,$scope, $scopeId | null | save config value
+public function | deleteConfig | $path, $scope, $scopeId | null | delete config value
+
+### Mage_Core_Model_Resource_Config
+- 执行函数
+- __construct->_construct->_init('core/config_data', 'config_id')->_setMainTable('core/config_data', 'config_id')
+- 设置mainTable $this->_setResource('core');
+- $this->_setMainTable('config_data', 'config_id');
+    - _setResource('core') $this->_resources = new Mage_Core_Model_Resource(), $this->_resourcePrefix = 'core', $this->_resourceModel = 'core';
+    - $this->_mainTable = 'config_data';
+    - $this->_idFieldName = 'config_id';
+    - new Mage_Core_Model_Resource();
+
+### Mage
+属性 | 名称 | 参数 | 内容 | 描述
+---| --- | ---| --- | ---
+public static function | getSingleton | $modelClass, $arguments | @string, @array, @return Mage_Core_Abstract | Retrieve model object singleton 
+public static function | getModel | $modelClass, $argument | Retrieve model object
+public static function | getResourceSingleton | $modelClass, $arguments | @string，@array | null | Retrieve resource model object singleton
+public function | getResourceModel | null | null | 
+```php
+// 获取model单例对象
+public static function getSingleton($modelClass = '', array arguments = array()) {
+   $registryKey = '_singleton/'.$modelClass;
+   if (!self::registry($registrykey)) {
+       self::register($registryKey, self::getModel($modelClass, $arguments));
+   }
+   return self::registry($registryKey);
+}
+
+```
+
+```php
+// 获取model对象--> core
+public static function getModel($modelClass, $arguments) {
+    return self::getConfig()->getModelInstance($modelCalss, $argument);
+}
+```
+
+### Mage_Core_Model_Config
+属性 | 名称 | 参数 | 内容 | 描述
+---| --- | ---| --- | ---
+public function | getModelInstance | $modelClass, $object | @return Mage_Core_Model_Abstract 或false | Get model class instance
+public function | getModelClassName | $modelClass | @string | Retrieve module class name
+public function | getGroupedClassName | $groupType, $classId, $groupRootNode=null | $groupType->model, block,helper | Retrieve class name by class group
+
+
+```php
+// 获取model类实例 -->core
+public function getModelInstance($modelClass, $constructArguments) {
+    $className = $this->getModelClassName($modelClass);
+    if (class_exists($className)) {
+        Varien_Profiler::start('CORE::create_object_of::'.$className);
+        $obj = new $className($constructArguments);
+        Varien_Profiler::stop('CORE::create_object_of::'.$className);
+        return $obj;
+    } else {
+        return false;
+    }
+}
+```
+
+```php
+// 获取类名
+public function getModelClassName($modelClass) {
+    $modelClass = trim($modelClass);
+    if (strpos($modelClass, '/')===false) {
+        return $modelClass;
+    }
+    return $this->getGroupedClassName('model', $modelClass);
+}
+```
+
+```php
+// 获取类名/类组
+public function getGroupedClassName($groupType, $classId, $groupRootNode=null) {
+   if (empty($groupTootNode)) {
+       $groupRootNode = 'global/'.$groupType.'s';
+   }
+
+    $classArr = explode('/', trim($classId));
+    $group = $classArr[0];
+    $class = !empty($classArr[1]) ? $classArr[1] : null;
+
+    if (isset($this->_classNameCache[$groupRootNode][$group][$class]) {
+        return $this->_classNameCache[$groupRootNode][$group][$class];
+    }
+
+    $config = $this->_xml->global->{$group.'s'}->$groupType;
+    
+    $className = null;
+    if (isset($config->rewirte->$class)){
+       $className = (string)$config->rewrite->$class;
+    } else {
+        if (isset($config->deprecatedNode)) {
+                $deprecatedNode = $config->deprecatedNode;
+                $configOld = $this->_xml->global->{$groupType.'s'}->$deprecatedNode;
+                if (isset($configOld->rewrite->$class)) {
+                    $className = (string) $configOld->rewrite->$class;
+                }
+         }
+    }
+
+    // Second - if entity is not rewritten then use class prefix to form class name
+    if (empty($className)) {
+            if (!empty($config)) {
+                $className = $config->getClassName();
+            }
+            if (empty($className)) {
+                $className = 'mage_'.$group.'_'.$groupType;
+            }
+            if (!empty($class)) {
+                $className .= '_'.$class;
+            }
+            $className = uc_words($className);
+    }
+
+    $this->_classNameCache[$groupRootNode][$group][$class] = $className;
+    return $className;
+}
+```
+
+### Mage_Core_Model_App
+解读_initCurrentStore('', 'store');
+- $this->_initStores();
+  - 解读
+
+
+```php
+// init store, group and website collections
+protected function _initStores() 
+{
+    $this_stores = array();
+    $this->_groups = array();
+    $this->_website = null;
+    $this->_websites = array();
+
+   $websiteCollection = Mage::getModel('core/website')->getCollection()->initCache($this->getCache(), 'app', array(Mage_Core_Model_website::CACHE_TAG));
+   
+}
+
+
+
+### Mage_Core_Model_Abstract
+属性 | 名称 | 参数 | 内容 | 描述
+---| --- | ---| --- | ---
+extends | Varien_Object | null | null | null
+protected | $_eventPrefix | 'core_abstraact' | @var string | Prefix of model events names
+protected | $_eventObject | 'object' | @var string | Parameter name in event 
+protected | $_resourceName | @var string | null | Name of the resource model
+
+
+### Mage_Core_Model_Website
+初始化
+$this->_init('core/website');
+下一步解析$this->_setResourceModel('core/website')
+下一步解析
+$this->_resourceName = 'core/website';
+$this->_resourceCollectionName = 'core/website_collection';
+
+调用getcollection
+->getCollection()
+下一步$this->getResourceCollection();
+下一步 return Mage::getResourceModel('core/website_collection', $this->_getResource = new Mage_Core_Model_Resource_website);
+-> 到此为止
+
+解析_getResource()
+return Mage::getResourceSingleton('core/website');
+-> Mage::getResourceModel('core/website')
+-> config::getResourceModelInstance('core/website');
+->_getResouceModelFactoryClassName('core/website')-> core_resource/website -> getModelInstance('core_resource/website', $constructArguments) -> getModelClassName('core_resource/website') = Mage_Core_Model_Resource_website
+-> getGroupedClassname('model', 'core_resource/website');
+return new Mage_Core_Model_Resource_website();
+
+
+
+Mage_Core_Model_Resource_Website->Mage_Core_Model_Resource_Db_Abstract
