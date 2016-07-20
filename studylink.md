@@ -15,3 +15,12 @@
 -  [Web开发之路](http://www.cnblogs.com/polk6/archive/2013/05/10/3071327.html#3433041)
 -  [CSS float 浮动属性](http://www.cnblogs.com/polk6/archive/2013/07/25/3142187.html)
 -  [硬盘的存储原理和内部架构 ](http://blog.chinaunix.net/uid-23069658-id-3413957.html)
+-  [程序员应该知道的硬盘基本知识](http://www.cnblogs.com/shishm/archive/2011/10/24/2222469.html)
+   - 盘片
+   - 盘面
+   - 磁头
+   - 磁道
+   - 扇区
+   - 柱面
+-  [硬盘内部硬件结构和工作原理详解](http://blog.csdn.net/tianxueer/article/details/2689117)
+-  [计算机原理学习（3）-- 内存工作原理](http://blog.csdn.net/cc_net/article/details/11097267)
