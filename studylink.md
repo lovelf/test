@@ -24,3 +24,4 @@
    - 柱面
 -  [硬盘内部硬件结构和工作原理详解](http://blog.csdn.net/tianxueer/article/details/2689117)
 -  [计算机原理学习（3）-- 内存工作原理](http://blog.csdn.net/cc_net/article/details/11097267)
+-  [程序员的自我修养——操作系统篇](http://kb.cnblogs.com/page/211181/)
