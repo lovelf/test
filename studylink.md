@@ -25,3 +25,6 @@
 -  [硬盘内部硬件结构和工作原理详解](http://blog.csdn.net/tianxueer/article/details/2689117)
 -  [计算机原理学习（3）-- 内存工作原理](http://blog.csdn.net/cc_net/article/details/11097267)
 -  [程序员的自我修养——操作系统篇](http://kb.cnblogs.com/page/211181/)
+-  [看到别人写得很好的代码，感觉很无力怎么办？](https://segmentfault.com/q/1010000003108390)
+-  [php高可用框架](http://www.workerman.net/)
+-  [构建一个属于你的PHP MVC 框架—-0.简单介绍](http://istrone.com/?p=1249)
