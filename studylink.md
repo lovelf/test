@@ -28,3 +28,7 @@
 -  [看到别人写得很好的代码，感觉很无力怎么办？](https://segmentfault.com/q/1010000003108390)
 -  [php高可用框架](http://www.workerman.net/)
 -  [构建一个属于你的PHP MVC 框架—-0.简单介绍](http://istrone.com/?p=1249)
+-  [laravel的启动过程](http://www.cnblogs.com/wish123/p/4756669.html)
+-  [互联网协议](http://www.cnblogs.com/wish123/p/5599311.html)、
+-  [Magento - Rewrite机制一窥](http://www.cnblogs.com/sunsoftware/p/3980662.html)
+-  [消息队列设计精要](https://zhuanlan.zhihu.com/p/21649950?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title)
