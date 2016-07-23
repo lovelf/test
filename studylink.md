@@ -32,3 +32,9 @@
    - 高级语言(c/java/C#等) -> 汇编 -> 机器码
    - 指令周期、CPU周期、时钟周期
    - 
+-  [laravel的启动过程](http://www.cnblogs.com/wish123/p/4756669.html)
+-  [互联网协议](http://www.cnblogs.com/wish123/p/5599311.html)、
+-  [Magento - Rewrite机制一窥](http://www.cnblogs.com/sunsoftware/p/3980662.html)
+-  [消息队列设计精要](https://zhuanlan.zhihu.com/p/21649950?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title)
+-  [学习laravel5教程](https://github.com/johnlui/Learn-Laravel-5)
+
