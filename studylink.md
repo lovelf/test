@@ -28,3 +28,7 @@
 -  [看到别人写得很好的代码，感觉很无力怎么办？](https://segmentfault.com/q/1010000003108390)
 -  [php高可用框架](http://www.workerman.net/)
 -  [构建一个属于你的PHP MVC 框架—-0.简单介绍](http://istrone.com/?p=1249)
+-  [计算机原理学习（1）-- 冯诺依曼体系和CPU工作原理](http://blog.csdn.net/cc_net/article/details/10419645)
+   - 高级语言(c/java/C#等) -> 汇编 -> 机器码
+   - 指令周期、CPU周期、时钟周期
+   - 
