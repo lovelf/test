@@ -15,6 +15,10 @@
 -  [Web开发之路](http://www.cnblogs.com/polk6/archive/2013/05/10/3071327.html#3433041)
 -  [CSS float 浮动属性](http://www.cnblogs.com/polk6/archive/2013/07/25/3142187.html)
 -  [硬盘的存储原理和内部架构 ](http://blog.chinaunix.net/uid-23069658-id-3413957.html)
+   - 硬盘主要由盘体、控制电路板和接口部件组成。
+   - 盘体就是一个密封，封装了多个盘片的腔体；
+   - 控制电路包含硬盘BIOS，主控芯片和硬盘缓存等单元；
+   - 接口部件包含电源、数据接口主从跳线等。
 -  [程序员应该知道的硬盘基本知识](http://www.cnblogs.com/shishm/archive/2011/10/24/2222469.html)
    - 盘片
    - 盘面
@@ -22,14 +26,31 @@
    - 磁道
    - 扇区
    - 柱面
+   - 簇
+-  [硬盘存储数据物理原理](http://zhidao.baidu.com/link?url=8eqeOhLeYu_iCCQQ-QlOCPDUHB81lpjD42Wt2shf2sY0ApkJE_gfA2RC_VrTXdQja-rNVN9IYZQMkkJ1942Ix_)
+-  [磁盘工作原理揭秘](http://www.dostor.com/article/2012-09-07/1712853.shtml)
 -  [硬盘内部硬件结构和工作原理详解](http://blog.csdn.net/tianxueer/article/details/2689117)
+-  [深入理解数据库磁盘存储（Disk Storage）](http://blog.csdn.net/idber/article/details/8087473)
 -  [计算机原理学习（3）-- 内存工作原理](http://blog.csdn.net/cc_net/article/details/11097267)
+-  [由浅入深理解索引的实现](http://blog.csdn.net/idber/article/details/8109522)
 -  [程序员的自我修养——操作系统篇](http://kb.cnblogs.com/page/211181/)
 -  [看到别人写得很好的代码，感觉很无力怎么办？](https://segmentfault.com/q/1010000003108390)
 -  [php高可用框架](http://www.workerman.net/)
 -  [构建一个属于你的PHP MVC 框架—-0.简单介绍](http://istrone.com/?p=1249)
+-  [计算机原理学习（1）-- 冯诺依曼体系和CPU工作原理](http://blog.csdn.net/cc_net/article/details/10419645)
+   - 冯诺依曼的核心是：存储程序，顺序执行。
+   - 机器码就是0和1组合，指令和数据都采用二级制
+   - CPU指令集 
+   - 汇编语言 
+   - 高级语言->编译器（满足各种cpu）->汇编语言-> 汇编器(CPU公司提供) -> 机器码 -> 硬件电路板进行操作
+   - 高级语言(c/java/C#等) -> 汇编 -> 机器码
+   - 指令周期、CPU周期、时钟周期
+   - 
 -  [laravel的启动过程](http://www.cnblogs.com/wish123/p/4756669.html)
 -  [互联网协议](http://www.cnblogs.com/wish123/p/5599311.html)、
 -  [Magento - Rewrite机制一窥](http://www.cnblogs.com/sunsoftware/p/3980662.html)
 -  [消息队列设计精要](https://zhuanlan.zhihu.com/p/21649950?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title)
 -  [计算机组成原理 之 总线系统 ](http://blog.chinaunix.net/uid-181040-id-2838893.html)
+-  [学习laravel5教程](https://github.com/johnlui/Learn-Laravel-5)
+-  [如何成为一名黑客](http://blog.csdn.net/tianxueer/article/details/2695946)
+-  [PHP 命名空间 解惑](https://lvwenhan.com/php/401.html)

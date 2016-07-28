@@ -807,7 +807,12 @@ $this->_resourceCollectionName = 'core/website_collection';
 ->getCollection()
 下一步$this->getResourceCollection();
 下一步 return Mage::getResourceModel('core/website_collection', $this->_getResource = new Mage_Core_Model_Resource_website);
--> 到此为止
+-> config->getResourceModelInstance('core/website_collection', $object);
+-> config->_getResourceModelFactoryClassName('core/website_collection'); = core_resource/website_collection
+-> config->getModelInstance('core_resource/website_collection', $object);
+-> config->getModelClassName('core_resource/website_collection'); = Mage_Core_Model_Resource_Website_Collection;
+new Mage_Core_Model_Resource_Website_Collection;
+-> Mage_Core_Model_Resource_Db_Collection_Abstract
 
 解析_getResource()
 return Mage::getResourceSingleton('core/website');
@@ -820,3 +825,122 @@ return new Mage_Core_Model_Resource_website();
 
 
 Mage_Core_Model_Resource_Website->Mage_Core_Model_Resource_Db_Abstract
+
+
+### app->_initRequest()分析
+- $this->getRequest()  ->setPathInfo();
+       ->$this->_request = new Mage_Core_Controller_Request_Http();
+       <- $this->_request->_requestUri = "/";
+       -> setPathInfo();
+   
+### Mage_Core_Controller_Request_Http
+- 初始化看看流程
+- extends Zend_Controller_Request_Http
+- extends Zend_Controller_Request_Abstract
+- 扒到底了哈哈
+- 分析Zend_Controller_Request_Abstract
+
+属性 | 名称 | 参数 | 内容 | 描述
+---| --- | ---| --- | ---
+protected | $_dispatched | false | @var boolean | has the action been dispatched？
+protected | $_module | null | @var string | Module
+protected | $_moduleKey | 'module' | @var string | Module Key for retrieving module from params
+protected | $_controller | null | @var string | Controller
+protected | $_controllerKey | 'controller' | @var string | Controller key for retrieving controller from params
+protected | $_action | null | @var string | Action
+protected | $_params | array() | @var array | request parameters
+public function | getModuleName | null | @return string | Retrieve the module name
+public function | setModuleName | $value | @string
+public function | getControllerName | 
+public function | getParam | $key, $default |null | get an action parameter
+pubic function | getUserParams | null | @return array | Retrieve only user params
+public function | getUserParam | $key, $default| null | null
+public function | setParam | $key, $value | null | Set an action parameter A $value of null will unset the $key if it exists
+public function | getParams | null | @return array | Get all action parameters
+public function | setParams | 
+public function | clearParams |
+public function | setDispatched
+public function | isDispatched 
+
+属性 | 名称 | 参数 | 内容 | 描述
+---| --- | ---| --- | ---
+protected | $_paramSources | null | array('_GET','_POST')|Allowed parameter sources
+protected | $_requestUri | @var string | null | REQUEST_URI
+protected | $_baseUrl | @var string | null | Base URL of request
+protected | $_basePath | @var string | null | Base Path of request
+protected | $_pathInfo | @var string | ''| PATH_INFO
+protected | $_params | @var string | array() | Instance parameters
+protected | $_rawBody | @var string or false | null | Raw request body
+protected | $_aliases | @var array | array() | Alias key for request parameters 
+public function | __construct| $uri 
+public function | __get
+public function | get
+public function | set
+public function | __set
+public function | __isset
+public function | has
+public function | setQuery | $spec, $value | set GET values
+public function | getQuery | $key, $default | Retrieve a member of the $_GET superglobal
+public function | setPost 
+public function | getPost
+public function | getCookie
+public function | getServer
+public function | getEnv
+public function | setRequestUri
+public function | getRequestUri
+public function | setBaseUrl
+public function | getBaseUrl
+public function | setBasePath
+public function | getBasePath
+public function | setPathInfo
+public function | getPathInfo
+public function | setParamSources
+public function | getParamSources
+pubic function | setParam
+public function | getParam
+public function | getParams
+public function | setParam
+public function | setAlias
+public function | getAlias
+public function | getAliases
+public function | getMethod
+public function | isPost
+public function | isGet
+public function | isPut
+public function | isDelete
+public function | isHead
+public function | isOptions
+public function | isXmlHttpRequest
+public function | isFlashRequest
+public function | isSecure
+public function | getRawBody
+public function | getHeader
+public function | getScheme
+public function | getHttpHost
+public function | getClientIp
+
+### Mage_Core_Controller_Request_Http
+
+### app->_initFrontController
+- $this->_initFrontController = new Mage_Core_Controller_Varien_Front();
+
+属性 | 名称 | 参数 | 内容 | 描述
+---| --- | ---| --- | ---
+protected | $_defaults | array()| null | null
+protected | $_routes | array()
+protected | $_urlCache | array();
+public function | setDefault | key, $value=null
+public function | getDefault | $key = null
+public function | getRequest | Retrieve request object
+public function | getResonse |
+public function | addRouter
+public function | getRouter
+public function | init
+public function | dispatch
+public function | _getRequestRewriteController
+public function | getRouterByRoute
+public function | getRouterByFrontName
+public function | rewrite
+ | _processRewriteurl
+ | _checkBaseUrl
+ protected function | _isAdminFrontNameMatche
