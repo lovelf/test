@@ -32,3 +32,4 @@
 -  [互联网协议](http://www.cnblogs.com/wish123/p/5599311.html)、
 -  [Magento - Rewrite机制一窥](http://www.cnblogs.com/sunsoftware/p/3980662.html)
 -  [消息队列设计精要](https://zhuanlan.zhihu.com/p/21649950?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title)
+-  [计算机组成原理 之 总线系统 ](http://blog.chinaunix.net/uid-181040-id-2838893.html)
