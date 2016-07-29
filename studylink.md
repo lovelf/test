@@ -54,3 +54,6 @@
 -  [学习laravel5教程](https://github.com/johnlui/Learn-Laravel-5)
 -  [如何成为一名黑客](http://blog.csdn.net/tianxueer/article/details/2695946)
 -  [PHP 命名空间 解惑](https://lvwenhan.com/php/401.html)
+-  [从输入 URL 到页面加载完成的过程中都发生了什么事情？](http://web.jobbole.com/83720/)
+-  [从FE的角度上再看输入url后都发生了什么](http://div.io/topic/609?page=1)
+-  [ PHP的核心Zend Engine](http://blog.csdn.net/rongyongfeikai2/article/details/19680311)
