@@ -57,3 +57,11 @@
 -  [从输入 URL 到页面加载完成的过程中都发生了什么事情？](http://web.jobbole.com/83720/)
 -  [从FE的角度上再看输入url后都发生了什么](http://div.io/topic/609?page=1)
 -  [ PHP的核心Zend Engine](http://blog.csdn.net/rongyongfeikai2/article/details/19680311)
+-  [nodejs博客](https://github.com/75team/firekylin/tree/master)
+-  [《Redis源码学习笔记》数据结构－字典](http://diaocow.iteye.com/blog/1935091)
+-  [深入浅出JMS(一)--JMS基本概念](http://blog.csdn.net/jiuqiyuliang/article/details/46701559)
+   - 消息模型
+     - Point-to-Point(P2P)
+     - Publish/Subscribe(Pub/Sub)
+     - 即点对点和发布订阅模型
+   - 
