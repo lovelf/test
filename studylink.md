@@ -64,4 +64,7 @@
      - Point-to-Point(P2P)
      - Publish/Subscribe(Pub/Sub)
      - 即点对点和发布订阅模型
-   - 
+
+- [基于 RabbitMQ 的实时消息推送](https://www.ibm.com/developerworks/cn/opensource/os-cn-rabbit-mq/#ibm-pcon)
+- [TCP/IP 应用程序的通信连接模式](https://www.ibm.com/developerworks/cn/aix/library/0807_liugb_tcpip/#ibm-pcon)
+- [学习 Linux，101: LPIC-1 学习路线图](http://www.ibm.com/developerworks/cn/linux/l-lpic1-map/)
