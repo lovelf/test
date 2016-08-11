@@ -64,4 +64,4 @@
      - Point-to-Point(P2P)
      - Publish/Subscribe(Pub/Sub)
      - 即点对点和发布订阅模型
-   - 
+- [大话NoSQL——什么是NoSQL？](http://blog.csdn.net/jiuqiyuliang/article/details/41879145)
