@@ -1,4 +1,10 @@
 ##Boostrap 基础框架
+- 1.5 优先级（1,1,1,1）-> (style, id, 类及元素属性， 元素及伪元素) 问题需要区分伪元素与伪类[CSS 伪类与伪元素](http://blog.csdn.net/sadfishsc/article/details/7047595)
+- 选择器
+   - 子选择器
+   - 属性选择器
+   - 兄弟选择器
+- 媒体查询（Media Query) min-width、max-width and
 1. CSS12 栅格系统
   - `.container {
       padding-right: 15px;
