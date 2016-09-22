@@ -19,3 +19,5 @@ a | 在当前位置后插入
 A | 在当前行尾插入
 o | 在当前行之后插入一行
 O | 在当前行之前插入一行
+
+-http://blog.csdn.net/niushuai666/article/details/7275406 操作指令

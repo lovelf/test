@@ -36,7 +36,7 @@
 2.  CSS组件设计思想
     - OA O（overwrite) A(append)
     - 基础样式，例如: btn, alert
-    - 颜色样式 btn-info, alert-success
+    - 颜色样式 btn-info, alert-success，primary
     - 尺寸样式 btn-ns, btn-sm, btn-lg
     - 状态样式 active、disabled
     - 特殊元素样式 dropdown-menu>li>a:hover
