@@ -69,3 +69,4 @@
 - [TCP/IP 应用程序的通信连接模式](https://www.ibm.com/developerworks/cn/aix/library/0807_liugb_tcpip/#ibm-pcon)
 - [学习 Linux，101: LPIC-1 学习路线图](http://www.ibm.com/developerworks/cn/linux/l-lpic1-map/)
 - [缓存机制和几何分形学](https://zhuanlan.zhihu.com/p/21738320)
+- [电商前端交易型系统设计原则](http://blog.jobbole.com/104681/)
