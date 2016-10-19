@@ -75,3 +75,6 @@
 - [这多年来我一直在钻研的技术](http://coolshell.cn/articles/17446.html)
 - [送给前端的你，推荐几篇前端汇总文章。](https://zhuanlan.zhihu.com/p/22229868)
 - [php扩展开发](http://blog.csdn.net/lgg201/article/details/8632498)
+- [博客](http://blog.csdn.net/hguisu/article/category/1253451)
+- [java基础教程](https://course.tianmaying.com/java-basic+java-environment#0)
+- [yii分析](https://www.zhihu.com/people/hello-kang)
