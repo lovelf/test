@@ -57,3 +57,25 @@ js 成员变量 私有变量 静态变量
   - 插值表达式
   - 模板表达式
 
+https://www.omniselling.net/git/v5/v5frontv2.git
+172.18.1.12/omniv5 admin asdasd123
+
+'git -c core.longpaths=true config --get remote.origin.url‘ 解决方案为 git config --global url."https://".insteadOf git://
+http://cnodejs.org/topic/4f9904f9407edba21468f31e npm config set registry https://registry.npm.taobao.org npm下载慢
+
+1. page
+2. search
+2. edit
+3. delete
+
+5. sort
+
+http://www.cnblogs.com/SLchuck/p/5904000.html 组件通信
+
+<Pagination [totalItems]="totalItems" [currentPage]="currentPage" [itemsPerPage]="itemsPerPage" (output)="output($event)"></Pagination>
+
+getAppResourcesService(url: string, body: any): any{
+        return this.http.post(url, options)
+            .map(res => res.json());
+    }
+http post提交
