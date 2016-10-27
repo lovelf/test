@@ -79,3 +79,8 @@ getAppResourcesService(url: string, body: any): any{
             .map(res => res.json());
     }
 http post提交
+
+
+
+### 查看es6 入门详解
+### 查看CI3 理解下
