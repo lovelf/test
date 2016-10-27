@@ -79,3 +79,11 @@ getAppResourcesService(url: string, body: any): any{
             .map(res => res.json());
     }
 http post提交
+
+ <select class="form-control" [(ngModel)]="mstep">
+      <option *ngFor="let opt of options.mstep" [value]="opt">{{opt}}</option>
+    </select>
+
+[angular2 demo](http://www.syntaxsuccess.com/angular-2-samples/#/demo/rxjs)
+npm install --save angular2-tree-component https://github.com/500tech/angular2-tree-component
+http://www.primefaces.org/primeng/#/multiselect
