@@ -82,5 +82,15 @@ http post提交
 
 
 
+
 ### 查看es6 入门详解
 ### 查看CI3 理解下
+
+ <select class="form-control" [(ngModel)]="mstep">
+      <option *ngFor="let opt of options.mstep" [value]="opt">{{opt}}</option>
+    </select>
+
+[angular2 demo](http://www.syntaxsuccess.com/angular-2-samples/#/demo/rxjs)
+npm install --save angular2-tree-component https://github.com/500tech/angular2-tree-component
+http://www.primefaces.org/primeng/#/multiselect
+
