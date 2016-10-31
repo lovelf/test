@@ -94,3 +94,11 @@ http post提交
 npm install --save angular2-tree-component https://github.com/500tech/angular2-tree-component
 http://www.primefaces.org/primeng/#/multiselect
 
+applicationName: "zhaibin test"
+resourceName: "APP_MENU.zhaibin_test"
+resourceOrder: "1"
+resourceType: "APP_MENU"
+resourceUrl: "/zhaibin/test"
+
+http://172.18.1.12/omniapp/system/resmgr/appresmgr/saveappresource
+
