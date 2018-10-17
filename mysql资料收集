@@ -3,3 +3,5 @@ https://www.cnblogs.com/tangyanbo/p/4462734.html  一次非常有意思的sql优
 http://www.cnblogs.com/ggjucheng/archive/2012/11/11/2765237.html mysql Explain语法
 http://www.cnblogs.com/mliang/p/3637937.html msyql优化建议
 http://www.cnblogs.com/wangxusummer/p/5329813.html MYSQL order by排序与索引关系总结
+https://blog.csdn.net/hzz532968708/article/details/77370497 Mysql多表查询效率的研究（一）
+https://blog.csdn.net/guichenglin/article/details/8098561?utm_source=blogkpcl5 mysql处理上百万条的数据库如何优化语句来提高处理查询效率
