@@ -9,3 +9,4 @@ https://tech.meituan.com/SQL_parser_used_in_mtdp.html SQL解析在美团的应�
 https://tech.meituan.com/about_desk_io.html 磁盘I/O那些事
 http://youzhixueyuan.com/architect/database-architecture 数据库架构
 https://www.cnblogs.com/annsshadow/p/5037667.html 步步深入：MySQL架构总览->查询执行流程->SQL解析顺序
+http://blog.jobbole.com/114273/?utm_source=blog.jobbole.com&utm_medium=relatedPosts MySQL多版本并发控制机制(MVCC)-源码浅析
