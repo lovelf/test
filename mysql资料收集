@@ -10,3 +10,7 @@ https://tech.meituan.com/about_desk_io.html 磁盘I/O那些事
 http://youzhixueyuan.com/architect/database-architecture 数据库架构
 https://www.cnblogs.com/annsshadow/p/5037667.html 步步深入：MySQL架构总览->查询执行流程->SQL解析顺序
 http://blog.jobbole.com/114273/?utm_source=blog.jobbole.com&utm_medium=relatedPosts MySQL多版本并发控制机制(MVCC)-源码浅析
+https://www.supjos.cn/archives/64.html MySQL数据库优化篇章·上
+https://www.supjos.cn/archives/76.html MySQL数据库优化篇章·下
+https://blog.csdn.net/g6U8W7p06dCO99fQ3/article/details/80326140  微服务化的数据库设计与读写分离
+https://blog.csdn.net/konglongaa/article/details/78507910 不同微服务独立数据库，如何保障微服务架构下的数据一致性
