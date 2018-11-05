@@ -17,3 +17,4 @@ https://blog.csdn.net/g6U8W7p06dCO99fQ3/article/details/80326140  微服务化�
 https://blog.csdn.net/konglongaa/article/details/78507910 不同微服务独立数据库，如何保障微服务架构下的数据一致性
 http://seanlook.com/2016/10/23/mysql-utf8mb4/ mysql使用utf8mb4经验吐血总结
 https://www.cnblogs.com/rjzheng/p/9721765.html 研发应该懂的binlog知识(上)
+https://www.cnblogs.com/hoohack/p/7149234.html mysql主从复制原理探索
