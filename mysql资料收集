@@ -18,3 +18,5 @@ https://blog.csdn.net/konglongaa/article/details/78507910 不同微服务独立�
 http://seanlook.com/2016/10/23/mysql-utf8mb4/ mysql使用utf8mb4经验吐血总结
 https://www.cnblogs.com/rjzheng/p/9721765.html 研发应该懂的binlog知识(上)
 https://www.cnblogs.com/hoohack/p/7149234.html mysql主从复制原理探索
+https://www.cnblogs.com/xiaotengyi/p/5532191.html MySQL 5.7 并行复制实现原理与调优
+https://blog.csdn.net/L19920622/article/details/78867099 并行复制的从库执行FTWRL死锁
