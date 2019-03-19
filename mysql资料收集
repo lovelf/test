@@ -22,3 +22,4 @@ https://www.cnblogs.com/xiaotengyi/p/5532191.html MySQL 5.7 并行复制实现�
 https://blog.csdn.net/L19920622/article/details/78867099 并行复制的从库执行FTWRL死锁
 https://mp.weixin.qq.com/s?__biz=MjM5MjIxNDA4NA==&mid=205236417&idx=1&sn=15281c834348911cea106478aa819175&scene=23&srcid=0525zwrE6gRYCIPgKxoq40iN#rd  MySQL 5.7并行复制实现原理与调优
 https://www.xaprb.com/blog/2015/08/08/innodb-book-outline/ Innodb全解
+https://segmentfault.com/a/1190000009374567 MYSQL中的乐观锁实现(MVCC)简析
