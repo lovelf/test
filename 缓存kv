@@ -8,3 +8,4 @@ https://zhuanlan.zhihu.com/p/59167071 Redis与Mysql双写一致性方案解析
 https://www.cnblogs.com/kaleidoscope/p/9481991.html 为什么 MongoDB （索引）使用B-树而 Mysql 使用 B+树
 https://zhuanlan.zhihu.com/p/51910237 浅谈存储引擎
 http://www.jiangxinlingdu.com/redis/2019/01/24/redisinfo.html Redis几个重要的健康指标
+http://zhangtielei.com/posts/blog-redis-how-to-start.html Redis源码从哪里读起？
