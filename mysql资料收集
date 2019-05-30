@@ -29,3 +29,4 @@ https://segmentfault.com/a/1190000018556824 一次 group by + order by 性能优
 https://www.cnblogs.com/butterfly100/p/9034281.html 数据库分库分表思路
 https://www.cnblogs.com/clsn/p/8214048.html MySQL 优化实施方案
 https://github.com/hedengcheng/tech/blob/master/database/MySQL/InnoDB%20Transaction%20Lock%20and%20MVCC.pdf 事务 锁 多版本ppt
+https://futu.im/article/mysql/ MySQL 表与索引设计攻略
