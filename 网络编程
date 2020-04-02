@@ -1,2 +1,3 @@
 https://zhuanlan.zhihu.com/p/61785349 服务端经典的C10k问题(译)
 https://zhuanlan.zhihu.com/p/43595321 RPC 服务器之【多进程描述符传递】高阶模型
+https://juejin.im/post/5d8eb024e51d45782113e0e1#heading-5 多路复用 I/O 模型详解, 为什么他能支持更高的并发
