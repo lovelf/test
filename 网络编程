@@ -1,9 +1,10 @@
 https://zhuanlan.zhihu.com/p/61785349 服务端经典的C10k问题(译)
 https://zhuanlan.zhihu.com/p/43595321 RPC 服务器之【多进程描述符传递】高阶模型
-https://juejin.im/post/5d8eb024e51d45782113e0e1#heading-5 多路复用 I/O 模型详解, 为什么他能支持更高的并发
-https://www.cnblogs.com/apprentice89/archive/2013/05/06/3063039.html epoll用法【整理】
+https://juejin.im/post/5d8eb024e51d45782113e0e1#heading-5 多路复用 I/O 模型详解, 为什么他能支持更高的并发 已看
+https://www.cnblogs.com/apprentice89/archive/2013/05/06/3063039.html epoll用法【整理】 已看
 https://www.cnblogs.com/apprentice89/p/3234677.html epoll源码实现分析[整理]
 https://www.cnblogs.com/apprentice89/archive/2013/05/09/3068274.html 等待队列 wait_queue【转载】
 https://www.linuxidc.com/Linux/2019-02/157109.htm epoll源码解析
-https://www.jianshu.com/p/16cec70c816f epoll使用详解
+https://www.jianshu.com/p/16cec70c816f epoll使用详解 已看
 http://blog.chinaunix.net/uid-28541347-id-4236779.html poll&&epoll实现分析（一）——poll实现
+https://segmentfault.com/a/1190000018517562 图解 epoll 是如何工作的
