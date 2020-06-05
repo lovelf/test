@@ -11,3 +11,5 @@ https://segmentfault.com/a/1190000018517562 图解 epoll 是如何工作的
 https://www.cnblogs.com/sheng-jie/p/how-much-you-know-about-io-models.html IO 模型知多少 | 理论篇 在看
 https://zhuanlan.zhihu.com/p/144805500 Redis 6.0 多线程IO处理过程详解 已看
 https://www.cnblogs.com/52php/tag/%E8%BF%9B%E7%A8%8B%E9%80%9A%E4%BF%A1/ linux进程间通信
+https://www.cnblogs.com/lfsblack/p/5498556.html libevent源码深度剖析
+http://rango.swoole.com/archives/508 PHP并发IO编程之路
