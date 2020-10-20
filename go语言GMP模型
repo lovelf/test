@@ -1,3 +1,6 @@
 https://www.cnblogs.com/sunsky303/p/9705727.html 深入Golang调度器之GMP模型
 https://tonybai.com/2017/06/23/an-intro-about-goroutine-scheduler/ 也谈goroutine调度器
 https://www.cnblogs.com/wanghui-garcia/archive/2004/01/13/10354854.html go标准库的学习-net/http
+https://www.cnblogs.com/zkweb/p/7777525.html    Golang源码探索(一) 编译和调试源码
+https://zhuanlan.zhihu.com/p/98496865 go语言并发原理和机制【一】
+https://mp.weixin.qq.com/s/EbxkBokYBajkCR-MazL0ZA 深度解密Go语言之关于 interface 的 10 个问题
