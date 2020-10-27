@@ -5,7 +5,7 @@ https://www.cnblogs.com/apprentice89/archive/2013/05/06/3063039.html epoll用法
 https://www.cnblogs.com/apprentice89/p/3234677.html epoll源码实现分析[整理] 粗略看一遍
 https://www.cnblogs.com/apprentice89/archive/2013/05/09/3068274.html 等待队列 wait_queue【转载】
 https://www.linuxidc.com/Linux/2019-02/157109.htm epoll源码解析
-https://www.jianshu.com/p/16cec70c816f epoll使用详解 已看 20201027在看
+https://www.jianshu.com/p/16cec70c816f epoll使用详解 已看 20201027再看 涉及到了https://www.cnblogs.com/west000/p/6863399.html 系统级I/O
 http://blog.chinaunix.net/uid-28541347-id-4236779.html poll&&epoll实现分析（一）——poll实现
 https://segmentfault.com/a/1190000018517562 图解 epoll 是如何工作的
 https://www.cnblogs.com/sheng-jie/p/how-much-you-know-about-io-models.html IO 模型知多少 | 理论篇 在看
