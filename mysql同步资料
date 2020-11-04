@@ -2,3 +2,4 @@ https://mp.weixin.qq.com/s/Fj4Z6e04y2Rsa9O_u3uHow MySQL复制技术及半同步�
 https://www.jianshu.com/p/d4cc0ea9d097 MySQL InnoDB存储引擎大观
 https://www.jianshu.com/p/5ef1565738ab MySQL 5.7半同步复制技术
 https://www.tinymind.net.cn/articles/1a83d0fbed0254 MySQL半同步复制的数据一致性探讨
+http://www.linuxidc.com/Linux/2015-11/124942.htm MySQL binlog 组提交与 XA(两阶段提交)
