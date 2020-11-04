@@ -3,3 +3,6 @@ https://www.jianshu.com/p/d4cc0ea9d097 MySQL InnoDB存储引擎大观
 https://www.jianshu.com/p/5ef1565738ab MySQL 5.7半同步复制技术
 https://www.tinymind.net.cn/articles/1a83d0fbed0254 MySQL半同步复制的数据一致性探讨
 http://www.linuxidc.com/Linux/2015-11/124942.htm MySQL binlog 组提交与 XA(两阶段提交)
+https://blog.csdn.net/andong154564667/article/details/82117727 MySQL 5.7新特性：并行复制原理（MTS）
+https://zhuanlan.zhihu.com/p/37129637 MySQL 并行复制演进及 MySQL 8.0 中基于 WriteSet 的优化
+http://moguhu.com/article/detail?articleId=129 MySQL的并行复制策略
