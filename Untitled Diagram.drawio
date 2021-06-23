@@ -1,13 +1,21 @@
-<mxfile host="app.diagrams.net" modified="2021-06-23T12:31:05.079Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36" etag="Oy0NdDabxKGUoM5DZDFn" version="14.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-06-23T12:37:49.123Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36" etag="KfM2tafmXDJLoJQxB_BO" version="14.6.6" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="eIJZXxI5gstD7FgTX0uq-2" value="&lt;p style=&quot;margin: 0px ; margin-top: 6px ; text-align: center&quot;&gt;&lt;b&gt;page frame&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;+ Attribute1: Type&lt;br&gt;+ Attribute2: Type&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;" vertex="1" parent="1">
-          <mxGeometry x="90" y="300" width="180" height="90" as="geometry" />
+        <mxCell id="eIJZXxI5gstD7FgTX0uq-2" value="&lt;p style=&quot;margin: 0px ; margin-top: 6px ; text-align: center&quot;&gt;&lt;b&gt;struct page&amp;nbsp;&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;+ unsinged long flags&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;+ atomic_t count&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;+ atomic_t _mapcount&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;+ struct list_head lru&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;+ sturct address_space *mapping&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;+ unsigned long index&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;" parent="1" vertex="1">
+          <mxGeometry x="120" y="450" width="200" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="eIJZXxI5gstD7FgTX0uq-3" value="" style="shape=component;jettyWidth=8;jettyHeight=4;" vertex="1" parent="eIJZXxI5gstD7FgTX0uq-2">
+        <mxCell id="eIJZXxI5gstD7FgTX0uq-3" value="" style="shape=component;jettyWidth=8;jettyHeight=4;" parent="eIJZXxI5gstD7FgTX0uq-2" vertex="1">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s1NJ0OKN6wxzchKN2vTO-5" value="&lt;p style=&quot;margin: 0px ; margin-top: 6px ; text-align: center&quot;&gt;&lt;b&gt;struct zone&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;+ Attribute1: Type&lt;br&gt;+ Attribute2: Type&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;" vertex="1" parent="1">
+          <mxGeometry x="350" y="240" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="s1NJ0OKN6wxzchKN2vTO-6" value="" style="shape=component;jettyWidth=8;jettyHeight=4;" vertex="1" parent="s1NJ0OKN6wxzchKN2vTO-5">
           <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
             <mxPoint x="-24" y="4" as="offset" />
           </mxGeometry>
