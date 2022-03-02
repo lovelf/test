@@ -4,5 +4,8 @@ https://www.jianshu.com/p/5ef1565738ab MySQL 5.7半同步复制技术 （结合r
 https://www.tinymind.net.cn/articles/1a83d0fbed0254 MySQL半同步复制的数据一致性探讨
 http://www.linuxidc.com/Linux/2015-11/124942.htm MySQL binlog 组提交与 XA(两阶段提交)
 https://blog.csdn.net/andong154564667/article/details/82117727 MySQL 5.7新特性：并行复制原理（MTS）
+（2022-03-02,1. 说明了group commit提交， 如何产生组，在事务进入prepare阶段之前，全局计数器的当前值会被储存在事务中，这个值称为此事务的commit-parent（也就是last_committed））
 https://zhuanlan.zhihu.com/p/37129637 MySQL 并行复制演进及 MySQL 8.0 中基于 WriteSet 的优化
 http://moguhu.com/article/detail?articleId=129 MySQL的并行复制策略
+https://keithlan.github.io/2018/07/31/mysql_mts_detail/ MySQL并行复制的深入浅出
+总结:复制涉及到同步问题及并行复制两个概念、维度
