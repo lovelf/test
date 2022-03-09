@@ -9,3 +9,5 @@ https://www.cnblogs.com/lishanlin/p/3143267.html nosql理论基础
 https://juejin.im/post/6888094100411645965 一篇文章帮你理清分布式事务的来龙去脉
 https://www.cnblogs.com/crazymakercircle/p/14343154.html raft 图解 (秒懂)
 https://www.cnblogs.com/crazymakercircle/p/14334422.html 一致性协议 （史上最全）
+https://github.com/maemual/raft-zh_cn/blob/master/raft-zh_cn.md raft翻译版本
+https://wenfh2020.com/2020/10/01/redis-raft/#1-%E7%AE%97%E6%B3%95%E6%96%87%E6%A1%A3 [redis 源码走读] sentinel 哨兵 - 原理
